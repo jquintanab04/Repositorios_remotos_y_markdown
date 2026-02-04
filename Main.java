@@ -10,6 +10,7 @@ public class Main {
         //Ejercicio 1.
 
         int [] array = new int [5];
+        int suma = 0;
 
         System.out.println("Introduce 5 números: ");
         for (int i = 0; i < array.length; i++) {
@@ -20,6 +21,16 @@ public class Main {
         for (int i = 0; i < array.length; i++) {
             System.out.println(array [i]);
         }
+
+
+        for (int i = 0; i < array.length; i++) {
+            suma += array [i];
+        }
+        System.out.println("La suma de los cinco números es: " + suma);
+        double media = (double) suma / array.length;
+        System.out.println("La media entre los cinco números es: " + media);
+
+
 
     }
 }
