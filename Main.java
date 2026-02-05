@@ -63,16 +63,30 @@ public class Main {
         //Ejercicio 2.
 
         int [] edades = new int [5];
+        int edadMin = 999;
+        int edadMax = 0;
 
         System.out.println("Introduce 5 edades (enteros): ");
         for (int i = 0; i < edades.length; i++) {
             edades [i] = numero.nextInt();
+
+            if (edades[i] < edadMin) {
+                edadMin = edades[i];
+            }
+
+            if (edades[i] > edadMax) {
+                edadMax = edades[i];
+            }
+
         }
 
         System.out.println("Estas son las edades introducidas");
         for (int i = 0; i < edades.length; i++) {
             System.out.println(edades[i]);
         }
+
+        System.out.println("La edad mínima es " + edadMin + " años.");
+        System.out.println("La edad máxima es " + edadMax + " años.");
 
     }
 }
