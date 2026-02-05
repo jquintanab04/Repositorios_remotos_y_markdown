@@ -1,4 +1,5 @@
 import java.sql.Array;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -60,6 +61,7 @@ public class Main {
          */
 
 
+        /*
         //Ejercicio 2.
 
         int [] edades = new int [5];
@@ -97,5 +99,26 @@ public class Main {
         System.out.println("La edad máxima es " + edadMax + " años.");
         System.out.println("Hay " + menorEdad + " personas menores de edad.");
         System.out.println("Hay " + mayorEdad + " personas mayores de edad.");
+
+         */
+
+
+
+        //Ejercicio 3.
+
+        Random aleatorio = new Random();
+        int [] numAleatorios = new int[10];
+
+        for (int i = 0; i < numAleatorios.length; i++) {
+            numAleatorios[i] = aleatorio.nextInt(1, 100);
+        }
+
+
+        System.out.println("Los diez números aleatorios son: ");
+        for (int i = 0; i < numAleatorios.length; i++) {
+            System.out.println((i + 1) + ". " + numAleatorios[i]);
+        }
+
+
     }
 }
