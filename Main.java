@@ -31,6 +31,30 @@ public class Main {
         System.out.println("La media entre los cinco números es: " + media);
 
 
+        int numeroMenor = 999;
+        int numeroMayor = 0;
+        int negativos = 0;
+        int positivos = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < numeroMenor) {
+                numeroMenor = array[i];
+            }
+
+            if (array[i] > numeroMayor) {
+                numeroMayor = array[i];
+            }
+
+            if (array[i] < 0) {
+                negativos++;
+            } else {
+                positivos++;
+            }
+        }
+        System.out.println("El número menor es: " + numeroMenor);
+        System.out.println("El número mayor es: " + numeroMayor);
+        System.out.println("Hay " + negativos + " números negativos.");
+        System.out.println("Hay " + positivos + " números positivos.");
 
     }
 }
