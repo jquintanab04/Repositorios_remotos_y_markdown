@@ -65,6 +65,8 @@ public class Main {
         int [] edades = new int [5];
         int edadMin = 999;
         int edadMax = 0;
+        int menorEdad = 0;
+        int mayorEdad = 0;
 
         System.out.println("Introduce 5 edades (enteros): ");
         for (int i = 0; i < edades.length; i++) {
@@ -78,6 +80,12 @@ public class Main {
                 edadMax = edades[i];
             }
 
+            if (edades[i] < 18) {
+                menorEdad++;
+            } else {
+                mayorEdad++;
+            }
+
         }
 
         System.out.println("Estas son las edades introducidas");
@@ -87,6 +95,7 @@ public class Main {
 
         System.out.println("La edad mínima es " + edadMin + " años.");
         System.out.println("La edad máxima es " + edadMax + " años.");
-
+        System.out.println("Hay " + menorEdad + " personas menores de edad.");
+        System.out.println("Hay " + mayorEdad + " personas mayores de edad.");
     }
 }
