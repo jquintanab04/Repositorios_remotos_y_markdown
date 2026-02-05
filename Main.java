@@ -120,5 +120,19 @@ public class Main {
         }
 
 
+        for (int i = 0; i < numAleatorios.length; i++) {
+            for (int j = 0; j < numAleatorios.length - 1; j++) {
+                if (numAleatorios[j] < numAleatorios[j + 1]) { // Si el de la izquierda es menor, los intercambio
+                    int aux = numAleatorios[j];
+                    numAleatorios[j] = numAleatorios[j + 1];
+                    numAleatorios[j + 1] = aux;
+                }
+            }
+        }
+        System.out.println();
+        System.out.println("Ordenado de mayor a menor: ");
+        for (int i = 0; i < numAleatorios.length; i++) {
+            System.out.println((i + 1) + ". " + numAleatorios[i]);
+        }
     }
 }
