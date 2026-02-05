@@ -7,6 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        /*
         //Ejercicio 1.
 
         int [] array = new int [5];
@@ -55,6 +56,23 @@ public class Main {
         System.out.println("El número mayor es: " + numeroMayor);
         System.out.println("Hay " + negativos + " números negativos.");
         System.out.println("Hay " + positivos + " números positivos.");
+
+         */
+
+
+        //Ejercicio 2.
+
+        int [] edades = new int [5];
+
+        System.out.println("Introduce 5 edades (enteros): ");
+        for (int i = 0; i < edades.length; i++) {
+            edades [i] = numero.nextInt();
+        }
+
+        System.out.println("Estas son las edades introducidas");
+        for (int i = 0; i < edades.length; i++) {
+            System.out.println(edades[i]);
+        }
 
     }
 }
