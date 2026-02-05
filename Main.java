@@ -134,5 +134,15 @@ public class Main {
         for (int i = 0; i < numAleatorios.length; i++) {
             System.out.println((i + 1) + ". " + numAleatorios[i]);
         }
+
+
+        System.out.println();
+        System.out.println("Mostrando solo los números pares: ");
+        for (int i = 0; i < numAleatorios.length; i++) {
+            if (numAleatorios[i] % 2 == 0) {
+                System.out.println((i + 1) + ". " + numAleatorios[i]);
+            }
+        }
+
     }
 }
