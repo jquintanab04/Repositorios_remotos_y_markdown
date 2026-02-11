@@ -8,13 +8,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        /*
+
         //Ejercicio 1.
 
-        int [] array = new int [5];
+        System.out.print("¿Cuántos números quieres introducir?: ");
+        int tamanio = numero.nextInt();
+
+        int [] array = new int [tamanio];
         int suma = 0;
 
-        System.out.println("Introduce 5 números: ");
+        System.out.println("Introduce " + tamanio + " números: ");
         for (int i = 0; i < array.length; i++) {
             array [i] = numero.nextInt();
         }
@@ -28,9 +31,9 @@ public class Main {
         for (int i = 0; i < array.length; i++) {
             suma += array [i];
         }
-        System.out.println("La suma de los cinco números es: " + suma);
+        System.out.println("La suma de los " + tamanio + " números es: " + suma);
         double media = (double) suma / array.length;
-        System.out.println("La media entre los cinco números es: " + media);
+        System.out.println("La media entre los " + tamanio + " números es: " + media);
 
 
         int numeroMenor = 999;
@@ -58,7 +61,6 @@ public class Main {
         System.out.println("Hay " + negativos + " números negativos.");
         System.out.println("Hay " + positivos + " números positivos.");
 
-         */
 
 
         /*
@@ -103,7 +105,7 @@ public class Main {
          */
 
 
-
+        /*
         //Ejercicio 3.
 
         Random aleatorio = new Random();
@@ -143,6 +145,7 @@ public class Main {
                 System.out.println((i + 1) + ". " + numAleatorios[i]);
             }
         }
+         */
 
     }
 }
