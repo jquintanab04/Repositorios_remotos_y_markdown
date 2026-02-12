@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        /*
+
         //Ejercicio 1.
 
         int [] array = new int [5];
@@ -25,6 +25,19 @@ public class Main {
         }
 
 
+        System.out.println("Las veces que se repite cada número es:");
+        int contador;
+        for (int i = 0; i < array.length; i++) {
+            contador = 0;
+            for (int j = 0; j < array.length; j++) {
+                if (array[i] == array[j]) {
+                    contador++;
+                }
+            }
+            System.out.println("El número " + array[i] + " se repite " + contador + " veces.");
+        }
+
+        
         for (int i = 0; i < array.length; i++) {
             suma += array [i];
         }
@@ -58,7 +71,7 @@ public class Main {
         System.out.println("Hay " + negativos + " números negativos.");
         System.out.println("Hay " + positivos + " números positivos.");
 
-         */
+
 
 
         /*
@@ -103,7 +116,7 @@ public class Main {
          */
 
 
-
+        /*
         //Ejercicio 3.
 
         Random aleatorio = new Random();
@@ -143,6 +156,7 @@ public class Main {
                 System.out.println((i + 1) + ". " + numAleatorios[i]);
             }
         }
+         */
 
     }
 }
