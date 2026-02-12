@@ -37,7 +37,7 @@ public class Main {
             System.out.println("El número " + array[i] + " se repite " + contador + " veces.");
         }
 
-        
+
         for (int i = 0; i < array.length; i++) {
             suma += array [i];
         }
@@ -72,6 +72,23 @@ public class Main {
         System.out.println("Hay " + positivos + " números positivos.");
 
 
+        System.out.print("Elimina un número: ");
+        int elimNum = numero.nextInt();
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == elimNum) {
+                for (int j = i; j < array.length - 1; j++) {
+                    array[j] = array[j + 1];
+                }
+                array[array.length - 1] = 0;
+                break;
+            }
+        }
+
+        System.out.println("Estos son los números del array");
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array [i]);
+        }
 
 
         /*
