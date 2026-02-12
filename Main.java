@@ -1,4 +1,5 @@
 import java.sql.Array;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -25,6 +26,13 @@ public class Main {
         System.out.println("Estos son los números del array");
         for (int i = 0; i < array.length; i++) {
             System.out.println(array [i]);
+        }
+
+
+        Arrays.sort(array);
+        System.out.println("Ordenados de menor a mayor.");
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
         }
 
 
