@@ -116,6 +116,12 @@ public class Main {
         edadMedia = (double) acumulador / edades.length;
 
 
+        Arrays.sort(edades);
+        System.out.println("Ordenadas de menor a mayor.");
+        for (int i = 0; i < edades.length; i++) {
+            System.out.println(edades[i]);
+        }
+
         System.out.println("La edad mínima es " + edadMin + " años.");
         System.out.println("La edad máxima es " + edadMax + " años.");
         System.out.println("Hay " + menorEdad + " personas menores de edad.");
