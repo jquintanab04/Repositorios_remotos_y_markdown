@@ -144,5 +144,22 @@ public class Main {
             }
         }
 
+
+        int [] pares = new int [numAleatorios.length];
+        int [] impares = new int [numAleatorios.length];
+
+        int contPares = 0;
+        int contImpares = 0;
+
+        for (int i = 0; i < numAleatorios.length; i++) {
+            if (numAleatorios[i] % 2 == 0) {
+                pares[contPares] = numAleatorios[i];
+                contPares++;
+            } else {
+                impares[contImpares] = numAleatorios[i];
+                contImpares++;
+            }
+        }
+
     }
 }
