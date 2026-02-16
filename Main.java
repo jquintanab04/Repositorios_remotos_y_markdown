@@ -61,7 +61,6 @@ public class Main {
          */
 
 
-        /*
         //Ejercicio 2.
 
         int [] edades = new int [5];
@@ -95,15 +94,34 @@ public class Main {
             System.out.println(edades[i]);
         }
 
+
+        int rango0_17 = 0;
+        int rango18_30 = 0;
+        int rango31_50 = 0;
+        int rango51 = 0;
+
+        for (int i = 0; i < edades.length; i++) {
+            if (edades[i] >= 0 && edades[i] < 18) {
+                rango0_17++;
+            } else if (edades[i] >= 18 && edades[i] < 31) {
+                rango18_30++;
+            } else if (edades[i] >= 31 && edades[i] < 51) {
+                rango31_50++;
+            } else {
+                rango51++;
+            }
+        }
+
+
         System.out.println("La edad mínima es " + edadMin + " años.");
         System.out.println("La edad máxima es " + edadMax + " años.");
         System.out.println("Hay " + menorEdad + " personas menores de edad.");
         System.out.println("Hay " + mayorEdad + " personas mayores de edad.");
+        System.out.println("Hay " + rango0_17 + " persona(s) en el rango 0-17, " + rango18_30 + " en el rango 18-30, " + rango31_50 +
+                " en el rango 31-50 y " + rango51 + " en el rango +51.");
 
-         */
 
-
-
+        /*
         //Ejercicio 3.
 
         Random aleatorio = new Random();
@@ -143,6 +161,8 @@ public class Main {
                 System.out.println((i + 1) + ". " + numAleatorios[i]);
             }
         }
+
+         */
 
     }
 }
