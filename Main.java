@@ -183,5 +183,15 @@ public class Main {
         System.out.println();
         System.out.println("La media de los números generados es de: " + mediaNumeros);
 
+
+
+        System.out.println();
+        System.out.println("Los números que están por encima de la media son: ");
+        for (int i = 0; i < numAleatorios.length; i++) {
+            if (numAleatorios[i] > mediaNumeros) {
+                System.out.println((i + 1) + ". " + numAleatorios[i]);
+            }
+        }
+
     }
 }
