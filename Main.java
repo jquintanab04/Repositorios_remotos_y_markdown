@@ -120,6 +120,12 @@ public class Main {
         System.out.println("Hay " + rango0_17 + " persona(s) en el rango 0-17, " + rango18_30 + " en el rango 18-30, " + rango31_50 +
                 " en el rango 31-50 y " + rango51 + " en el rango +51.");
 
+        if (menorEdad == 0) {
+            System.out.println("Todas las personas son mayores de edad.");
+        } else {
+            System.out.println("NO todas las personas son mayores de edad.");
+        }
+
 
         /*
         //Ejercicio 3.
