@@ -161,5 +161,18 @@ public class Main {
             }
         }
 
+        System.out.println();
+        System.out.print("Introduce un número para buscarlo entre los números generados: ");
+        int buscarNumero = numero.nextInt();
+
+        for (int i = 0; i < numAleatorios.length; i++) {
+            if (numAleatorios[i] == buscarNumero) {
+                System.out.println("La posición de dicho número es el '" + (i + 1) + ".");
+                break;
+            } else if (numAleatorios[i] != buscarNumero && i == numAleatorios.length - 1) {
+                System.out.println("El número introducido no existe.");
+            }
+        }
+
     }
 }
