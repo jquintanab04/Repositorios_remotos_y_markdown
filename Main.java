@@ -72,8 +72,7 @@ public class Main {
          */
 
 
-
-
+        /*
         //Ejercicio 2.
 
         int [] edades = new int [5];
@@ -128,9 +127,11 @@ public class Main {
         System.out.println("Hay " + mayorEdad + " personas mayores de edad.");
         System.out.println("La media de edad es " + edadMedia + " años.");
 
+         */
 
 
-        /*
+
+
         //Ejercicio 3.
 
         Random aleatorio = new Random();
@@ -170,7 +171,17 @@ public class Main {
                 System.out.println((i + 1) + ". " + numAleatorios[i]);
             }
         }
-         */
+
+
+        double mediaNumeros;
+        int acumulador = 0;
+        for (int i = 0; i < numAleatorios.length; i++) {
+            acumulador += numAleatorios[i];
+        }
+        mediaNumeros = (double) acumulador / numAleatorios.length;
+
+        System.out.println();
+        System.out.println("La media de los números generados es de: " + mediaNumeros);
 
     }
 }
